@@ -21,6 +21,9 @@ public class CarController {
 
     @RequestMapping(value= "/getCars/{brand}", method = RequestMethod.GET)
     public List<Car> getCars(@PathVariable String brand) {
+
+        System.out.println("Retrieve Cars");
+
         ArrayList<Car> carsList = new ArrayList<Car>();
         for (Car car : carsDb) {
             if (brand.equalsIgnoreCase(car.getBrand())) {
