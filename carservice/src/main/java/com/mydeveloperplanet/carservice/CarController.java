@@ -16,7 +16,9 @@ public class CarController {
     static {
 
         carsDb.add(new Car("Renault", "Clio"));
+        carsDb.add(new Car("Renault", "Kadjar"));
         carsDb.add(new Car("Ford", "Mondeo"));
+        carsDb.add(new Car("Ford", "Mustang"));
     }
 
     @RequestMapping(value= "/getCars/{brand}", method = RequestMethod.GET)
